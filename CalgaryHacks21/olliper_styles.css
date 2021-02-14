@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("Sunset1.jpg") no-repeat center center fixed;
+    height: 10em;
+    width: 20em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ccc;
+}
+
+header > h1{
+    color: sandybrown;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.schedulePlanner {
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 240px;
+    height: 60px;
+    border-radius: 80px;
+    line-height: 60px;
+    text-align: center;
+    border: 3px solid #ffffaf;
+    display: block;
+    text-decoration: none;
+    margin: 300px auto;
+    color: #ffffaf;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: .3s;
+}
+
+.schedulePlanner:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ffffaf;
+    opacity: .5;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+}
+
+.schedulePlanner:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ffffaf;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+    transition-delay: .2s;
+}
+
+.schedulePlanner:hover {
+    color: #fff;
+}
+
+.schedulePlanner:hover:before {
+    top: 0;
+}
+
+.schedulePlanner:hover:after {
+    top: 0;
+}
+
+.resourceRecommend {
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 240px;
+    height: 60px;
+    border-radius: 80px;
+    line-height: 60px;
+    text-align: center;
+    border: 3px solid #ffffaf;
+    display: block;
+    text-decoration: none;
+    margin: 300px auto;
+    color: #ffffaf;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: .3s;
+}
+
+.resourceRecommend:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ffffaf;
+    opacity: .5;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+}
+
+.resourceRecommend:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ffffaf;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+    transition-delay: .2s;
+}
+
+.resourceRecommend:hover {
+    color: #fff;
+}
+
+.resourceRecommend:hover:before {
+    top: 0;
+}
+
+.resourceRecommend:hover:after {
+    top: 0;
+}
+
+.toDo {
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 240px;
+    height: 60px;
+    border-radius: 80px;
+    line-height: 60px;
+    text-align: center;
+    border: 3px solid #ffffaf;
+    display: block;
+    text-decoration: none;
+    margin: 300px auto;
+    color: #ffffaf;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: .3s;
+}
+
+.toDo:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ffffaf;
+    opacity: .5;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+}
+
+.toDo:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #ffffaf;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+    transition-delay: .2s;
+}
+
+.toDo:hover {
+    color: #fff;
+}
+
+.toDo:hover:before {
+    top: 0;
+}
+
+.toDo:hover:after {
+    top: 0;
+}
