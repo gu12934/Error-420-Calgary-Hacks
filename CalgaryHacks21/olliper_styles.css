@@ -22,20 +22,21 @@ header > h1{
     position: absolute;
     left: 530px;
     top: 10%;
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 100px;
     height: 50px;
 }
 
 body > p {
-    color: darkblue;
+    color: black;
     text-align: center center;
     position: absolute;
-    left: 25%;
+    left: 10%;
     top: 30%;
-    font-family: sans-serif;
-    font-size: 30px;
-    height: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px #ff7300;
 }
 
 .options {
@@ -45,6 +46,13 @@ body > p {
     padding: 0;
     box-sizing: border-box;
 }
+
+ 
+
+h1 {
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
 
 .option {
     font-family: arial;
@@ -66,6 +74,8 @@ body > p {
     transition: .3s;
     left: 560px;
     top: 400px;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 .option:before {
