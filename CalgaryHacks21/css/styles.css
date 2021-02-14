@@ -1,0 +1,139 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+      background-position: center;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgb(247, 212, 100);
+    font-size: 30px;
+    transition: 0.3s;
+    margin-top: 5px;
+
+    border-style: solid;
+    border-block-width: 2px;
+    border-color: #000000;
+    border-radius: 25px;
+  
+    /* make the list items unselectable */
+    /* -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  /* ul li:nth-child(odd) {
+    background: rgb(228, 135, 247);
+    border-style: solid;
+    border-block-width: 2px;
+    border-color: #ffc7f6;
+  } */
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: rgb(247, 231, 145);
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: rgb(89, 255, 172);
+    color: rgb(0, 0, 0);
+    text-decoration: line-through;
+    border-color: rgb(1, 133, 45);
+    transition: 0.3s;
+  }
+
+  /* {
+      COLOUR PALETTE
+    rgb(106,68,107)
+    rgb(250,172,115)
+    rgb(152,136,221)
+    rgb(171,93,144)
+    rgb(240,166,72)
+    rgb(252,252,188) 
+  } */
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 25px;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #fc4646;
+    color: white;
+    border-style: solid;
+    border-block-width: 2px;
+    border-color: #000000;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #fdb7f900;
+    padding: 20px 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 60px;
+    font-family:monospace;
+    border-radius: 25px;
+    
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin:0px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+
+    border-style: solid;
+    border-block-width: 2px;
+    border-color: #000000;
+    border-radius: 25px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: rgb(247, 212, 100);
+    color: rgb(0, 0, 0);
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    border-style: solid;
+    border-block-width: 2px;
+    border-color: #000000;
+    border-radius: 25px;
+  }
+  
+  .addBtn:hover {
+    background-color: rgb(61, 252, 156);
+  }
