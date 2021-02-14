@@ -18,9 +18,10 @@ body {
 
 header > h1{
     color: darkblue;
-    text-align: center;
+    text-align: center center fixed;
     position: absolute;
-    left: 50%;
+    left: 40%;
+    top: 30%;
     font-family: sans-serif;
     font-size: 100px;
     height: 50px;
@@ -28,18 +29,21 @@ header > h1{
 
 body > p {
     color: darkblue;
-    text-align: center;
+    text-align: center center;
     position: absolute;
-    left: 20%;
-    top: 30%;
+    left: 25%;
+    top: 50%;
     font-family: sans-serif;
     font-size: 30px;
     height: 50px;
 }
 
 .options {
-    text-align: center;
-    width: 100%;
+    text-align: center center fixed;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .option {
@@ -51,17 +55,17 @@ body > p {
     border-radius: 80px;
     line-height: 60px;
     text-align: center;
-    border: 3px solid #ffffaf;
+    border: 3px solid #6a446b;
     display: inline-block;
     text-decoration: none;
     margin: 10px auto;
-    color: #ffffaf;
+    color: #6a446b;
     position: relative;
     overflow: hidden;
     background: transparent;
     transition: .3s;
-    left: 100%;
-    top: 40%;
+    left: 560px;
+    top: 500px;
 }
 
 .option:before {
@@ -69,7 +73,7 @@ body > p {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: #ffffaf;
+    background: #6a446b;
     opacity: .5;
     top: -100%;
     left: 0;
@@ -83,7 +87,7 @@ body > p {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: #ffffaf;
+    background: #6a446b;
     top: -100%;
     left: 0;
     right: 0;
