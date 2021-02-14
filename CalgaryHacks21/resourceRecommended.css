@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("Sunrise1.jpg") no-repeat center center fixed;
+    height: 10em;
+    width: 20em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ccc;
+}
+
+header > h1{
+    color: darkblue;
+    text-shadow: 2px 2px 8px #FF0000;
+    text-align: center center fixed;
+    position: absolute;
+    left: 530px;
+    top: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    height: 50px;
+}
+
+#q{
+    color: black;
+    text-align: center center;
+    position: absolute;
+    left: 34%;
+    top: 30%;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px #ff7300;
+}
+
+.choices{
+    text-align: center center fixed;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.choice{
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 240px;
+    height: 60px;
+    border-radius: 80px;
+    line-height: 60px;
+    text-align: center;
+    border: 3px solid #6a446b;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px auto;
+    color: #6a446b;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: .3s;
+    left: 560px;
+    top: 400px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.choice:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #6a446b;
+    opacity: .5;
+    top: -100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: .3s;
+}
+
+.choice:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #6a446b;
+    top: -100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: .3s;
+    transition-delay: .2s;
+}
+
+.choice:hover {
+    color: #fff;
+}
+
+.choice:hover:before {
+    top: 0;
+}
+
+.choice:hover:after {
+    top: 0;
+}

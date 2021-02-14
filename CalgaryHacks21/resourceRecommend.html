@@ -6,17 +6,86 @@
     <meta name="description" content="Personalized online helper">
     <meta name="author" content="error420">
 
-    <link rel="stylesheet" href="olliper_styles.css">
+    <link rel="stylesheet" href="resourceRecommended.css">
 
   </head>
   <body>
     <header>
       <h1>Olliper</h1>
     </header>
-    <p>Welcome to Olliper :)
-      What can we help you with today?</p>
+    <div id="q">
+        Are you looking for someone to talk to?
+    </div>  
+    <button class="choices">
+        <button id="yes" class="choice">
+            Yes
+        </button>
+        <button id="no" class="choice">
+            No
+        </button>
+    </button>
     
-    <script src="olliper_main_page.js"></script>
+    <script>
+        document.getElementByID("yes").onclick = add1();
+        document.getElementByID("no").onclick = sub2();
+        var questions = ["A community member?", 
+        "Would you rather some meditation", "How about an interactive relaxation game?",
+        "That's okay, we have music too. How about that?", "Ambient noises, instead?", "Nature?", "People?",
+        "No? That's alright! How about a good book?", "Or are movies more your thing?",
+        "Cute animals then?", "Well, maybe you can browse around and you'll find something you like :)"];
+        var recCodes = [11, 12, 21, 221, 2221, 222211, 2222121, 222221, 2222221, 22222221, 22221221, 222212221, 2222122221];
+        var rec = 0;
+        var prompt = -1;
 
+        function add1(){
+            document.getElementByID("q").innerHTML = 'Haha';
+            rec *= 10;
+            rec += 1;
+            change(1);
+            check();
+        }
+
+        function sub2(){
+            document.getElementByID("q").innerText = "Hello";
+            rec *=10;
+            rec += 2;
+            change(2);
+            check();
+        }
+
+        function change(last){
+            if(prompt == -1){
+                if(last == 1){
+                    prompt += 1;
+                    q.innerHTML = 'Haha';
+                }
+                else{
+                    prompt += 2;
+                    q.immerText = "Hello";
+                }
+            }
+            if(prompt >= 0 && prompt <= 3 || prompt >= 5 && prompt <= 9){
+                if(last == 2){
+                    prompt += 1;
+                    q.value = questions[prompt];
+                }
+            }
+            if(prompt == 4){
+                if(last == 1){
+                    prompt += 1;
+                    q.value = questions[prompt];
+                }
+                else{
+                    prompt += 3;
+                    q.value = questions[prompt];
+                }
+            }
+        }
+
+        function check(){
+
+        }
+
+    </script>
   </body>
 </html>
